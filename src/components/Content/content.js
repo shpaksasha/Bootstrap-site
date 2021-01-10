@@ -4,7 +4,7 @@ const Content = () =>{
     return(
         <div>
            <h3>Sia - California Dreamin.mp3</h3>
-            <p>Основной контент !!!!!!</p>
+            <p>Основной контент !!</p>
         </div>
     )
 };
