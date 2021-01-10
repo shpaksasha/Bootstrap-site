@@ -45,47 +45,34 @@ const dilay = (ms)=>{
     })
 };
 
-// dilay(2000).then(()=> console.log('2 seconds'));
+dilay(2000).then(()=> console.log('2 seconds'));
 
 const url = 'https://jsonplaceholder.typicode.com/todos';
 
-// function fetch() {
-//     console.log('Start');
-//      return dilay(2000)
-//          .then(() => fetch(url))
-//          .then(response => response.json())
-// }
-//
-// fetch()
-//     .then(data =>{
-//        console.log('Data: ', data)
-//     });
-
-
-
-async function fetchAsinc() {
+function fetch() {
     console.log('Start');
- await dilay(2000);
-  const response = await fetch(url);
-    const data = await response.json();
-    console.log('Data: ', data)
+     return dilay(2000)
+         .then(() => fetch(url))
+         .then(response => response.json())
 }
 
-fetchAsinc();
+fetch()
+    .then(data =>{
+       console.log('Data: ', data)
+    });
 
-// let a =7;
+
+
+// async function fetchAsinc() {
+//     console.log('Start');
+//  await dilay(2000);
+//   const response = await fetch(url);
+//     const data = await response.json();
+//     console.log('Data: ', data)
+// }
 //
-// console.log(a);
-//
-// let b = new Promise((resolve, reject) =>{
-//     setTimeout(()=>{
-//        resolve(a = 99);
-//     }, 2000);
-// });
-//
-// b.then((prom)=>{
-//     console.log(prom)
-// });
+// fetchAsinc();
+
 
 
 
