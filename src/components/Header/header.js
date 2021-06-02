@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Container, Form, FormControl, Nav, Navbar} from "react-bootstrap";
 import logo from '../../images/logo192.png';
 
-const Head = () => {
+const Header = () => {
     return (
         <Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
             <Container>
@@ -33,6 +33,6 @@ const Head = () => {
     )
 };
 
-export default Head;
+export default Header;
 
 
